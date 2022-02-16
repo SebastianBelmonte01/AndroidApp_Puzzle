@@ -50,7 +50,12 @@ public class MainActivity extends AppCompatActivity {
 
         Puzzle initialPuzzle = new Puzzle(pieces);
         initialPuzzle.printPuzzle();
+        Puzzle auxPuzzle = initialPuzzle;
+        initialPuzzle.mixing();
+        initialPuzzle.printPuzzle();
+
         initialPuzzle.clickReceived();
+
 
 
 
