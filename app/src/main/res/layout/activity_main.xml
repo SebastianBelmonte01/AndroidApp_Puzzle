@@ -1,103 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".MainActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:weightSum="2"
+        android:layout_above="@+id/firstRow">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movimientos: "
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="0"
+            android:id="@+id/tvMov"
+            />
+    </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_above="@+id/centerRow"
-        android:id="@+id/firstRow">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="1"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvFirst"/>
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="2"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvSecond"/>
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="3"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvThird"/>
+        android:layout_marginBottom="50dp"
+        android:id="@+id/line"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#d64045"
+            android:shadowColor="@color/white"
+            android:text="Salir"
+            android:textSize="20dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnMezclar"
+            android:textSize="20dp"
+            android:backgroundTint="#ec7d10"
+
+            android:text="Mezclar"/>
+
+        <Button
+            android:id="@+id/btnNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#6a994e"
+            android:text="Terminar"
+            android:textSize="15dp" />
+
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:id="@+id/centerRow">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="4"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvFourth"/>
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="5"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvFifth"/>
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="6"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvSixth"/>
+        android:layout_above="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:layout_margin="3dp"
+            android:background="@drawable/pic_border" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/centerRow"
-        android:id="@+id/thirdRow">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="7"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvSeventh"/>
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="8"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvEighth"/>
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text=""
-            android:textSize="30dp"
-            android:gravity="center"
-            android:id="@+id/tvNinth"/>
-    </LinearLayout>
+
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_above="@+id/centerRow"
+    android:id="@+id/firstRow">
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:background="#005f73"
+        android:text="1"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvFirst"/>
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:background="#0a9396"
+        android:text="2"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvSecond"/>
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:background="#94d2bd"
+        android:text="3"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvThird"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/centerRow">
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:background="#e9d8a6"
+        android:text="4"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvFourth"/>
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:background="#ee9b00"
+        android:text="5"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvFifth"/>
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:background="#ca6702"
+        android:text="6"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvSixth"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/centerRow"
+    android:id="@+id/thirdRow">
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:background="#bb3e03"
+        android:text="7"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvSeventh"/>
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:background="#ae2012"
+        android:text="8"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvEighth"/>
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_margin="1dp"
+        android:text=""
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tvNinth"/>
+</LinearLayout>
+
+
+
 
 </RelativeLayout>

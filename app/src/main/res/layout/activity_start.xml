@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_b"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:weightSum="6"
+        >
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#ec7d10"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="P"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#6a994e"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="U"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#57cc99"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="Z"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#f1c453"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="Z"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#d64045"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="L"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#c2d11b"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="E"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#003049"
+        android:text="Start"
+        android:textSize="50dp" />
+
+
+
+
+</RelativeLayout>
+
+
